@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs"); -%>
+<%- include('style.ejs'); -%>
+<%- include('partials/nav.ejs'); -%>
+
+      <div class="container loginpage animate">
+
+          <h2 class="heading">Login Form</h2>
+          <p class="text">Only Admins can login!  </p>
+          <form action="/user/login"method="POST">
+             
+              <div class="form-group1 ">
+                  <label for="exampleInputEmail1" style="padding:3px;color:#ffbb00;">Email address</label>
+                  <input type="email" class="form-control " name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">      
+              </div>
+              <div class="form-group2">
+                  <label for="exampleInputPassword1" style="padding:3px;color:#ffbb00;">Password</label>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+      
+              <button type="submit" class="btn btn-primary " id="button">Submit</button>
+          </form>
+      </div>
+     
+        
+      <%- include("./partials/Script.ejs") %> 
+      <div class="footer1" style="margin-top:210px;position:fixed;">
+          <a href="https://www.linkedin.com/in/chinmay-maldar-0602b7213"><p>Made with ❤️ by Chinmay Maldar</p></a>
+        </div>
