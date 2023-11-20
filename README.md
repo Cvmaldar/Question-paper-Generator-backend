@@ -24,8 +24,12 @@ cd question-paper-generator
 npm install
 ```
 4. Create a `.env` file in the root directory and add your MongoDB connection URL and PORT in the following format.
-
 ```
 MONGO_URL=mongodb://your-mongo-db-url
 PORT=3000
+```
+5. Start the application.
+
+```
+npm start
 ```
