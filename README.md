@@ -18,3 +18,14 @@ git clone https://github.com/Cvmaldar/Question-paper-Generator-backend.git
   ```
 cd question-paper-generator
 ```
+3. Install dependencies using npm.
+
+```
+npm install
+```
+4. Create a `.env` file in the root directory and add your MongoDB connection URL and PORT in the following format.
+
+```
+MONGO_URL=mongodb://your-mongo-db-url
+PORT=3000
+```
