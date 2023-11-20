@@ -4,17 +4,18 @@
   "description": "This is a question paper generator App build using nodejs expressJs EJS",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "nodemon app.js"
   },
-  "author": "",
+  "author": "chinmay vm",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
-    "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "mongoose": "^8.0.1",
+    "mongoose": "^8.0.1"
+  },
+  "devDependencies": {
     "nodemon": "^3.0.1"
   }
 }
