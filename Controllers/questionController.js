@@ -10,7 +10,7 @@ const addQuestion = async (req, res) => {
       difficulty,
       marks,
     });
-    const Question = await QuestionObject.save();
+    await QuestionObject.save();
   
     return res.status(200).json({
       success: true,
@@ -42,23 +42,7 @@ const getAllQuestions = async (req, res) => {
   }
 };
 
-// const FindBySubject=async(req,res)=>{
-//   try{
-//   const subjectQuestions=await Questions.find({subject:req.params.subject});
-//       return res.status(200).json({
-//         sucess:true,
-//         count:subjectQuestions.length,
-//         subquestion:subjectQuestions,
-//       });
-//   }
-//   catch(err){
-//     console.error(err.message);
-//     return res.status(500).json({
-//       success: false,
-//       msg: err.message,
-//     });
-//   }
-// }
+
 
 const generateQuestionPaper=async(req,res)=>{
   try {

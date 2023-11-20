@@ -1,27 +1,22 @@
 const express=require("express");
-const bodyParser = require("body-parser");
-
 const router=require("./Routes/questionroute");
-const path=require("path");
 const mongoose=require("mongoose");
-const ejs = require("ejs");
 const app=express();
 
-app.set('view engine', 'ejs');
-app.set("views",path.resolve("./views"));
+require("dotenv").config();
+
+const PORT = process.env.PORT | 3000;
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://chinmaymaldar2002:cvm234@cluster0.kx8frzv.mongodb.net/QPG",{ useNewUrlParser: true }).then(()=>{
+
+mongoose.connect(process.env.MONGODB_URL,{ useNewUrlParser: true }).then(()=>{
   console.log("connected to mongodb");
 }).catch((err)=>{
   console.log(err);
 })
 
-
-app.use("/api",router);
-
+app.use("/",router);
 
 
-app.listen(3000,()=>{
-    console.log("Server is on port 3000");
-});
+
+app.listen(PORT, () => console.log("Server running on port " + PORT));
