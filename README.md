@@ -5,7 +5,7 @@ This repository is just a backend of question paper generator based on easy medi
 
 ## NOTE
 - All questions of same difficulty are considered to be of equal weighage provided subjects are same.
-- Sample Data is taken and imported in mongodb atlas using command line mongoimport --uri mongodb+srv://username:PASSWORD @cluster0.kx8frzv.mongodb.net/<DATABASE> --collection <COLLECTION> --type FILETYPE --file FILENAME.
+- Sample Data is taken and imported in mongodb atlas using command line mongoimport --uri mongodb+srv://username:PASSWORD @cluster110.kx65xyzfrzv.mongodb.net/<DATABASE> --collection <COLLECTION> --type FILETYPE --file FILENAME.
 - Live Site Link: [`qpg-p025.onrender.com`](qpg-p025.onrender.com)
 
 ## Setup
