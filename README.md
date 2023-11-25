@@ -53,5 +53,6 @@ The server will be running on [`http://localhost:3000`](http://localhost:3000) b
     -Method:GET
     -Description:To generate a question paper on each subject based on difficulty
      ![image](https://github.com/Cvmaldar/Question-paper-Generator-backend/assets/92266485/60b4c6c8-b171-4bbc-8191-98ea3f178ac1)
+      ![image](https://github.com/Cvmaldar/Question-paper-Generator-backend/assets/92266485/a612ad50-5cd3-456a-92e8-f387d50d291c)
 
   
