@@ -33,3 +33,25 @@ PORT=3000
 ```
 npm start
 ```
+The server will be running on [`http://localhost:3000`](http://localhost:3000) by default.
+
+## Endpoints
+
+    
+1. ##### `/`
+    - Method: GET
+    - Description: Get the entire database.
+      ![image](https://github.com/Cvmaldar/Question-paper-Generator-backend/assets/92266485/b26b1adb-5e79-403c-b37b-339c32a7d96b)
+
+2. ##### `/addQuestion`
+   - Method: POST
+   - Description: To add a question in question store.
+    ![image](https://github.com/Cvmaldar/Question-paper-Generator-backend/assets/92266485/a6671e77-aed8-453d-bf9f-59cd5076fe6c)
+
+  
+3. #### `/questions`
+    -Method:GET
+    -Description:To generate a question paper on each subject based on difficulty
+     ![image](https://github.com/Cvmaldar/Question-paper-Generator-backend/assets/92266485/60b4c6c8-b171-4bbc-8191-98ea3f178ac1)
+
+  
